@@ -115,13 +115,67 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/RestartButton"
+        android:id="@+id/reshowButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Restart!"
+        android:text="@string/show_again_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tableLayout"
-        app:layout_constraintVertical_bias="0.507" />
+        app:layout_constraintVertical_bias="0.507"
+        tools:text="@string/show_again_button" />
+
+    <TextView
+        android:id="@+id/penaltyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#BD1212"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <TextView
+        android:id="@+id/levelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/penaltyView"
+        app:layout_constraintEnd_toEndOf="@+id/penaltyView"
+        app:layout_constraintStart_toStartOf="@+id/penaltyView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RestartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reshowButton"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/remainingCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:text="5"
+        android:textColor="#257014"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reshowButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
